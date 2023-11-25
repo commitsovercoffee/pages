@@ -1,4 +1,3 @@
-<div class="prose">
-	<h1 class="font-crimson">Welcome to SvelteKit</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="min-h-screen flex items-center justify-center">
+	<h1 class="p-8 text-8xl text-stone-900 font-crimson font-medium">Commits Over Coffee</h1>
 </div>
