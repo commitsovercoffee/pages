@@ -1,23 +1,9 @@
 <script>
-	import Page from '$lib/components/Page.svelte';
+	import { browser } from '$app/environment';
+	// ...Your other imports
+
+	if (browser) {
+		// to prevent error window is not defined, because it's SSR
+		window.location.href = '/home';
+	}
 </script>
-
-<Page>
-	<h1>Commits Over Coffee</h1>
-</Page>
-
-<Page>
-	<h1>Build reliable apps, for remarkable impact.</h1>
-</Page>
-
-<Page>
-	<h1>We have done this before.</h1>
-</Page>
-
-<Page>
-	<h1>Toegther we can...</h1>
-</Page>
-
-<Page>
-	<h1>Have an Idea ?</h1>
-</Page>

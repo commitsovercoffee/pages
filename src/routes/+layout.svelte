@@ -1,26 +1,30 @@
 <script>
 	import '../app.css';
-	import { page } from '$app/stores';
-
 	import '@fontsource-variable/crimson-pro';
 
-	// current url
-	$: url = $page.url.pathname.split('/').pop() || $page.url.pathname;
-
 	// nav bar
-	const links = ['home', 'projects', 'blog', 'about'];
-	console.log($page.url.pathname);
+	import { page } from '$app/stores'; // yields page url
+	const links = ['home', 'projects', 'blog', 'about']; // nav bar links
 </script>
 
-<section>
-	{#each links as link}
-		{#if link == 'home'}
-			<a href="/">{link}</a>
-		{:else if link == url}
-			<a href={link == 'home' ? '/' : `/${link}`}>{link}</a>
-		{:else}
-			<a href={link == 'home' ? '/' : `/${link}`}>{link}</a>
-		{/if}
-	{/each}
-</section>
+<!-- nav bar -->
+<div class="py-16 bg-gradient-to-b from-orange-50 from-80% sticky top-0">
+	<section class="w-min mx-auto border border-stone-400 rounded-full flex">
+		{#each links as link}
+			<a
+				class={`  
+					${'mx-2 my-1 px-2 py-1 text-xl transition-all duration-200 ease-in-out'}
+					${
+						$page.url.pathname.includes(link)
+							? 'text-stone-900'
+							: 'text-stone-400 hover:text-stone-900 active:translate-y-1'
+					}
+					`}
+				href={`/${link}`}>{link}</a
+			>
+		{/each}
+	</section>
+</div>
+
+<!-- slot for page specific content -->
 <slot />
