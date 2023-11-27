@@ -9,9 +9,9 @@
 
 <!-- nav bar -->
 <div
-	class="py-16 bg-gradient-to-b from-orange-50 from-80% sticky top-0 flex lg:justify-end justify-center"
+	class="py-12 bg-gradient-to-b from-orange-50 from-90% sticky top-0 flex lg:justify-end justify-center"
 >
-	<section class="w-min mx-16 border border-stone-400 rounded-full flex">
+	<section class="w-min mx-16 px-4 border border-stone-400 rounded-full bg-amber-50 flex">
 		{#each links as link}
 			<a
 				class={`  

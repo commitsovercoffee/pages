@@ -1,4 +1,5 @@
 <script>
+	import Button from '$lib/components/Button.svelte';
 	import Page from '$lib/components/Page.svelte';
 </script>
 
@@ -20,4 +21,5 @@
 
 <Page>
 	<h1>Have an Idea ?</h1>
+	<Button label="Let's Talk" primary={true} />
 </Page>
