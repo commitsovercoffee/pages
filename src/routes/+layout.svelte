@@ -5,7 +5,33 @@
 	// nav bar
 	import { page } from '$app/stores'; // yields page url
 	const links = ['home', 'projects', 'blog', 'about']; // nav bar links
+
+	// custom cursor
+	import { spring } from 'svelte/motion';
+
+	let innerHeight = 0;
+	let innerWidth = 0;
+
+	let size = spring(20);
+	let coords = spring(
+		{ x: -50, y: 50 },
+		{
+			stiffness: 0.1,
+			damping: 0.4
+		}
+	);
 </script>
+
+<!-- custom cursor -->
+<svelte:window
+	bind:innerWidth
+	bind:innerHeight
+	on:mousemove={(e) => {
+		coords.set({ x: e.clientX, y: e.clientY });
+	}}
+	on:mousedown={() => size.set(30)}
+	on:mouseup={() => size.set(20)}
+/>
 
 <!-- nav bar -->
 <div
@@ -27,6 +53,10 @@
 		{/each}
 	</section>
 </div>
+
+<svg viewBox="0 0 {innerWidth} {innerHeight}" class="fixed top-0 left-0 z-50 pointer-events-none">
+	<circle cx={$coords.x} cy={$coords.y} r={$size} class="fill-current text-stone-400 opacity-40" />
+</svg>
 
 <!-- slot for page specific content -->
 <slot />
