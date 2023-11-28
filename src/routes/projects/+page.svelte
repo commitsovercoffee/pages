@@ -6,7 +6,7 @@
 </script>
 
 <section class="prose mx-auto">
-	<p class="m-4">
+	<p class="m-4 text-xl 2xl:text-2xl">
 		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae blanditiis inventore voluptatum
 		autem dolores nostrum at accusantium omnis, repellendus officiis iure, accusamus recusandae
 		ipsum harum totam odit pariatur modi quod!

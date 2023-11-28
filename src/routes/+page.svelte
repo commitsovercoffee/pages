@@ -1,25 +1,26 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
 	import Page from '$lib/components/Page.svelte';
+	import Prompt from '$lib/components/Prompt.svelte';
 </script>
 
 <Page>
-	<h1>Commits Over Coffee</h1>
+	<Prompt>Commits Over Coffee</Prompt>
 </Page>
 
 <Page>
-	<h1>Build reliable apps, for remarkable impact.</h1>
+	<Prompt>Build reliable apps, for remarkable impact.</Prompt>
 </Page>
 
 <Page>
-	<h1>We have done this before.</h1>
+	<Prompt>We have done this before.</Prompt>
 </Page>
 
 <Page>
-	<h1>Toegther we can...</h1>
+	<Prompt>Toegther we can...</Prompt>
 </Page>
 
 <Page>
-	<h1>Have an Idea ?</h1>
+	<Prompt>Have an Idea ?</Prompt>
 	<Button label="Let's Talk" primary={true} />
 </Page>
