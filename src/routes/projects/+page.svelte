@@ -2,7 +2,7 @@
 	import * as content from './content';
 
 	const tagStyle =
-		'no-underline px-2 mx-2 rounded-xl bg-stone-900 hover:bg-stone-400 text-orange-50 hover:text-stone-900 transition-colors duration-200 ease-in ';
+		'no-underline px-2 mx-2 rounded-xl bg-stone-400  hover:bg-stone-900 hover:text-orange-50 transition-colors duration-200 ease-in ';
 </script>
 
 <section class="prose mx-auto">
