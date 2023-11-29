@@ -6,11 +6,7 @@
 </script>
 
 <section class="prose mx-auto">
-	<p class="m-4 text-xl 2xl:text-2xl">
-		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae blanditiis inventore voluptatum
-		autem dolores nostrum at accusantium omnis, repellendus officiis iure, accusamus recusandae
-		ipsum harum totam odit pariatur modi quod!
-	</p>
+	<p class="m-4 text-xl 2xl:text-2xl">Some how I always find time to tinker. Check 'em out!</p>
 
 	<div class="flex flex-wrap">
 		{#each content.projects as project}
@@ -21,10 +17,7 @@
 					<p class="text-stone-900 font-semibold">
 						{project.name}
 					</p>
-
-					<p class="text-stone-600">
-						{project.desc}
-					</p>
+					<p class="text-stone-600">{project.desc}</p>
 				</div>
 
 				<div class="p-2 flex flex-wrap">

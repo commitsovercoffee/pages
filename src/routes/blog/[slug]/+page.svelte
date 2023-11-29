@@ -24,8 +24,8 @@
 	});
 </script>
 
-<section class="prose mx-auto my-32 bg-orange-100">
-	<div class="p-8 m-0">
+<section class="mx-auto prose">
+	<div class="m-4 px-8 py-16 bg-orange-100 rounded-xl">
 		<svelte:component this={data.content} />
 	</div>
 </section>
