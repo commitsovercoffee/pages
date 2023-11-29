@@ -1,7 +1,7 @@
 ---
 title: second post
 desc: this is the second post
-date: "2022-12-14"
+date: '2022-12-14'
 tags:
   - trial
   - blog
@@ -25,5 +25,3 @@ println("yoo! - from second");
 }
 
 ```
-
-![svelte](favicon.png)

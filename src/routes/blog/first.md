@@ -1,7 +1,7 @@
 ---
 title: first post
 desc: this is the first post
-date: "2021-12-14"
+date: '2021-12-14'
 tags:
   - thought
   - trial

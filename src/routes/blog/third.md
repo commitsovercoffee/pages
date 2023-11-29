@@ -1,7 +1,7 @@
 ---
 title: third post
 desc: this is the third post
-date: "2023-12-14"
+date: '2023-12-14'
 tags:
   - confession
   - trial
@@ -23,5 +23,3 @@ println("yoo! - from third");
 }
 
 ```
-
-![svelte](favicon.png)
